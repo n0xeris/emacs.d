@@ -45,6 +45,11 @@ alias emacs-kill="killall emacs"
 alias emacs-reset="emacs-kill && emacs-start"
 ```
 
+Setup the Emacs daemon to run at startup, which for me using `AwesomeWM` would be through `~/.config/awesome/autostart.sh`:
+```sh
+run ~/.local/bin/emacs --daemon
+```
+
 Finally, start the server with `emacs-start` and open the client via `emacs`.
 
 
